@@ -31,3 +31,7 @@ print("State Bounds For Node 0")
 print(all_state_bounds[0])
 print("State Bounds For Node 8")
 print(all_state_bounds[8])
+
+# to access the lower or upper bound of node 8, for example do some something like:
+# all_state_bounds[8].sbound_low
+# all_state_bounds[8].sbound_high
