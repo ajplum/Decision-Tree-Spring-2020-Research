@@ -2,6 +2,8 @@ from typing import Tuple, List, Union, Dict, TypeVar
 import numpy as np
 from copy import deepcopy
 
+# LICENSE INFORMATION:  ALL RIGHTS RESERVED BY AARON ROTH 2020
+
 
 State = List[float]
 
