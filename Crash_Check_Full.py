@@ -2,7 +2,7 @@
 
 from abstract_state_utils import State, StateBounds, StateMapper, TreeInformation
 from typing import List
-from z3 import * # or should I import bounds file into new Z3 file?
+from z3 import * 
 
 child_left = [1, 3, 5, 7, 9, 11, 13, -1, -1, -1, -1, -1, -1, -1, -1]
 child_right = [2, 4, 6, 8, 10, 12, 14, -1, -1, -1, -1, -1, -1, -1, -1]
@@ -146,7 +146,7 @@ def test(upper,lower, A, leaf):
         s = Solver()
         
         def bounds_check(occ):
-            for i in range(len(crash)): #could check individual cell one by one and retain information
+            for i in range(len(crash)): 
                 s.push()
                 crashing = And(occ[i],crash[i]) == Or(And(occ[i],crash[i]), crash[i])
                 check = prove(crashing)
@@ -225,7 +225,7 @@ nodes = []
 
 for i in range(len(value)):
     if value[i] != -1:
-        nodes.append(i) #get inidices of nodes to be used later in loop to check each node
+        nodes.append(i) #get inidices of nodes to be used later in loop to check for crash at each node
 
 print("\nLeaf nodes of this Decision Tree Policy: ")
 print(nodes)
