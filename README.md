@@ -9,6 +9,7 @@ pip install z3-solver
 Run either of these two commands:
 
 python3 Crash_Check_Full.py
+
 python3 Crash_Check_Supressed.py
 
 
